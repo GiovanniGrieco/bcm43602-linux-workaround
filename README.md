@@ -13,6 +13,7 @@ It does not fix the problem, just makes things bearable.
 ```
 # ./install.sh
 ```
+Remember to blacklist the kernel module at system startup. Appending `modprobe.blacklist=brcmfmac` in GRUB config is sufficient.
 
 ## Control the service
 ```
