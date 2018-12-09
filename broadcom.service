@@ -1,0 +1,16 @@
+[Unit]
+Description=bring up Broadcom network connectivity
+
+# make sure we run it as late as possible
+After=wpa-supplicant.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/broadcomctl start
+ExecStop=/usr/local/bin/broadcomctl stop
+ExecReload=/usr/local/bin/broadcomctl restart
+RemainAfterExit=yes
+
+[Install]
+WantedBy=graphical.target
+
