@@ -4,7 +4,7 @@ This is a quick and dirty trick to take control of this misbehaving network
 card.
 
 Scripts are tested on Fedora 29. If you have any problems, please file an issue
-here or via email at _corsaro [AT] fedoraproject [DOT] com_.
+here or via email at `corsaro [AT] fedoraproject [DOT] org`.
 
 Note that I did not want to package this workaround because it's, well, _dirty_.
 It does not fix the problem, just makes things bearable.
